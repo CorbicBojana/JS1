@@ -3,18 +3,6 @@ module.exports = function(grunt) {
     require("load-grunt-tasks")(grunt);
     grunt.initConfig({
       pkg: grunt.file.readJSON("package.json"),
-      imagemin: {
-        dynamic: {
-          files: [
-            {
-              expand: true,
-              cwd: "app/images",
-              src: ["**/*.{png,jpg,gif}"],
-              dest: "app/images"
-            }
-          ]
-        }
-      },
   
       sass: {
         options: {
@@ -55,11 +43,9 @@ module.exports = function(grunt) {
       }
     });
   
-    grunt.loadNpmTasks("grunt-contrib-imagemin");
     grunt.loadNpmTasks("grunt-sass");
     grunt.loadNpmTasks("grunt-contrib-cssmin");
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks("grunt-contrib-watch");
-    grunt.registerTask("imagemin", ["imagemin"]);
     grunt.registerTask("default", ["sass", "cssmin", "uglify", "watch"]);
   };

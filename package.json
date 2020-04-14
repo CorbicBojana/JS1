@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/CorbicBojana/JS1#readme",
   "dependencies": {
+    "grunt": "^1.1.0",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-uglify": "^4.0.1",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-sass": "^3.1.0"
+    "grunt-sass": "^3.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "node-sass": "^4.13.1"
   }
 }
