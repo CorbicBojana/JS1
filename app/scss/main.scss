@@ -14,7 +14,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "cordale_regular", Arial;
+  font-family: 'Karla', sans-serif;
 }
 
 .container {
@@ -27,6 +27,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.col-1 {
+  width: 100%;
 }
 
 .col-2 {
