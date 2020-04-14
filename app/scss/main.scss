@@ -18,16 +18,15 @@ body {
 }
 
 .container {
-  max-width: 116rem;
+  max-width: 98rem;
   margin: 0 auto;
-  width: 100%;
-  padding: 0 1.5rem;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .col-2 {
