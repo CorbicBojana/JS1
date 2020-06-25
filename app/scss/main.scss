@@ -5,7 +5,6 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 * {
@@ -17,100 +16,100 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
-.container {
-  max-width: 98rem;
-  height: 100vh;
-  margin: 0 auto;
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 .col-1 {
   width: 100%;
-  height: 40vh;
 }
 
 .col-2 {
   width: 50%;
-  height: 60vh;
   background-color: $primary-color;
 }
 
 .col-1, .col-2 {
-  padding: 4rem 2rem;
-  color: $white-color;
+  padding: 4rem 6rem;
+  color: $light-gray-color;
   line-height: 1.6;
 } 
 
 .col-lighten {
-  background-color: lighten($color: $primary-color, $amount: 10)
-}
+  background-color: lighten($color: $primary-color, $amount: 10);
 
-.uppercase {
-  text-transform: uppercase;
+  p {
+    line-height: 1.4;
+  }
 }
-
-.center {
-  text-align: center;
-}
-
 
 img {
     max-width: 100%;
-  }
+}
   
-  h1 {
-    font-size: 4.8rem;
-  }
+h1 {
+  font-size: 4.8rem;
+}
 
-  h2 {
-    font-size: 2.4rem;
-    color: $yellow-color;
-  }
+h2 {
+  font-size: 3.6rem;
+  color: $bright-yellow-color;
+}
   
-  h3 {
-    font-size: 3.6rem;
-  }
+h3 {
+  font-size: 3.6rem;
+  color: $white-color;
+}
 
-  h1, h2, h3 {
-    padding-bottom: 2rem;
-  }
+h1, h2, h3 {
+  padding-bottom: 2rem;
+}
 
-  span {
-    font-size: 6rem;
-    font-weight: 400;
-    color: $white-color;
-    padding-right: 1.6rem;
-  }
+p {
+  font-size: 2.4rem;
+}
 
-  .text-primary {
-    color: $primary-color;
-  }
+span {
+  font-size: 2.4rem;
+  vertical-align: middle;
+  color: lighten($color: $primary-color, $amount: 30);
+}
 
-  .text-secondary {
-    color: $gray-color;
-    font-weight: 700;
-  }
+.text-price {
+  font-size: 6rem;
+  font-weight: 400;
+  color: $white-color;
+}
 
-  .button {
-    background-color: $yellow-color;
-    color: $white-color;
-    margin-top: 3rem;
-    padding: 2rem;
-    width: 100%;
-    font-weight: 700;
-    border-radius: 0.8rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
+.text-primary {
+  color: $primary-color;
+}
 
-    &:hover {
-      background-color: $white-color;
-      color: $yellow-color;
-    }
+.text-secondary {
+  color: $grayish-blue-color;
+  font-weight: 700;
+}
+
+.button {
+  background-color: $bright-yellow-color;
+  color: $light-gray-color;
+  margin-top: 4rem;
+  padding: 2rem;
+  width: 100%;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-radius: 0.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $light-gray-color;
+    color: $bright-yellow-color;
   }
+}
+
+@import "media";

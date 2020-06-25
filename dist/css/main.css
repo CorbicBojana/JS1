@@ -37,8 +37,7 @@ table {
   border-spacing: 0; }
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth; }
+  font-size: 62.5%; }
 
 * {
   box-sizing: border-box; }
@@ -47,39 +46,28 @@ body {
   font-size: 1.6rem;
   font-family: 'Karla', sans-serif; }
 
-.container {
-  max-width: 98rem;
-  height: 100vh;
-  margin: 0 auto; }
-
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; }
+  width: 100%; }
 
 .col-1 {
-  width: 100%;
-  height: 40vh; }
+  width: 100%; }
 
 .col-2 {
   width: 50%;
-  height: 60vh;
   background-color: #2ab2af; }
 
 .col-1, .col-2 {
-  padding: 4rem 2rem;
-  color: white;
+  padding: 4rem 6rem;
+  color: #e5eff5;
   line-height: 1.6; }
 
 .col-lighten {
   background-color: #3dd1cf; }
-
-.uppercase {
-  text-transform: uppercase; }
-
-.center {
-  text-align: center; }
+  .col-lighten p {
+    line-height: 1.4; }
 
 img {
   max-width: 100%; }
@@ -88,20 +76,28 @@ h1 {
   font-size: 4.8rem; }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   color: #c0df34; }
 
 h3 {
-  font-size: 3.6rem; }
+  font-size: 3.6rem;
+  color: white; }
 
 h1, h2, h3 {
   padding-bottom: 2rem; }
 
+p {
+  font-size: 2.4rem; }
+
 span {
+  font-size: 2.4rem;
+  vertical-align: middle;
+  color: #8fe5e3; }
+
+.text-price {
   font-size: 6rem;
   font-weight: 400;
-  color: white;
-  padding-right: 1.6rem; }
+  color: white; }
 
 .text-primary {
   color: #2ab2af; }
@@ -112,15 +108,27 @@ span {
 
 .button {
   background-color: #c0df34;
-  color: white;
-  margin-top: 3rem;
+  color: #e5eff5;
+  margin-top: 4rem;
   padding: 2rem;
   width: 100%;
+  font-size: 2.4rem;
   font-weight: 700;
   border-radius: 0.8rem;
   border: none;
   outline: none;
   cursor: pointer; }
   .button:hover {
-    background-color: white;
+    background-color: #e5eff5;
     color: #c0df34; }
+
+@media only screen and (max-width: 780px) {
+  h1 {
+    font-size: 3.4rem; }
+  h2 {
+    font-size: 2.2rem; }
+  p, .button {
+    font-size: 1.8rem; }
+  .col-1, .col-2 {
+    width: 100%;
+    padding: 4rem 3rem; } }
